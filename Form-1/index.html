@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Forms</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="wrapper">
+        <div class="container">
+            <h1 class="heading">Application Form for Job Interview</h1>
+            <div class="note"><strong>Note: </strong>This form has to be completed atleast 21 days prior to date</div>
+            <form action="backend">
+                <fieldset id="PD">
+                    <legend>Personal Details</legend>
+                    <div class="part">
+                        <label for="name">Name: </label>
+                        <input type="text" name="name" id="name" placeholder="Enter Your Name" required>
+                    </div>
+                    <div class="part">
+                        <label for="address">Address: </label>
+                        <input type="text" name="address" id="address" placeholder="Enter Your Address" required>
+                    </div>
+                    <div class="part">
+                        <label for="phone">Phone Number: </label>
+                        <input type="tel" name="phone" id="phone" placeholder="Enter Your Contact Number" required>
+                    </div>
+                    <div class="part">
+                        <label for="email">Email ID: </label>
+                        <input type="email" name="email" id="email" placeholder="Enter Your Email ID" required>
+                    </div>
+                    <div class="part">
+                        <label for="rating">Rate Yourself on a Scale of 10: </label>
+                        <input type="number" name="rating" id="rating" min="1" max="10" step="1" placeholder="Rating" required>
+                    </div>
+                    <div class="part">
+                        <div>Gender: </div>
+                        <li>
+                            <input type="radio" name="gnd" id="male">
+                            <label for="male">Male</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="gnd" id="female">
+                            <label for="female">Female</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="gnd" id="others">
+                            <label for="others">Others</label>
+                        </li>
+                    </div>
+                    <div class="part">
+                        <label for="dob">Enter Date of Birth: </label>
+                        <input type="date" name="dob" id="dob">
+                    </div>
+                </fieldset>
+
+                <fieldset id="ELG">
+                    <legend>Eligibility</legend>
+                    <div class="part">
+                        <div>Check that Apply: </div>
+                        <li>
+                            <input type="checkbox" name="10_75" id="elg1">
+                            <label for="elg1">Above 75% in 10th</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="elg" id="elg2">
+                            <label for="elg2">Above 75% in 12th</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="elg" id="elg3">
+                            <label for="elg3">Above 70% in cllg</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="elg" id="elg4">
+                            <label for="elg"4>Aggregate above 80%</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="elg" id="elg5">
+                            <label for="elg5">Done with Internship</label>
+                        </li>    
+                        <li>
+                            <input type="checkbox" name="elg" id="elg6">
+                            <label for="elg6">Have a linkedin profile</label>
+                        </li>
+                        </li>
+                    </div>
+                </fieldset>
+
+                <fieldset id="CD">
+                    <legend>Course & Department</legend>
+                    <div class="part">
+                        <label for="crs">Courses</label>
+                        <select name="crs" id="crs">
+                            <option value="">--Select Course--</option>
+                            <option value="BE">CSE</option>
+                            <option value="BTech">ME</option>
+                            <option value="BCom">CE</option>
+                            <option value="BBA">MBA</option>
+                            <option value="BBA">M.Tech</option>
+                            <option value="BBA">BBA</option>
+                            <option value="BBA">B.Com</option>
+                        </select>                
+                    </div>
+                    <div class="part">
+                        <label for="dpt">Department</label>
+                        <select name="dpt" id="dpt">
+                            <option value="">--Select Course--</option>
+                            <option value="BE">Bachelors of Engineering</option>
+                            <option value="BTech">Bachelors in Technology</option>
+                            <option value="BCom">Bachelors in Commerce</option>
+                            <option value="BBA">Bachelors in Bussiness Administrative</option>
+                        </select>
+                    </div>
+                </fieldset>
+                <fieldset id="ABT">
+                    <legend>About</legend>
+                    <div class="part">
+                        <div>Description:</div>
+                        <textarea name="text" id="text" cols="60" rows="10" placeholder="Describe Yourself in less than 100 words" maxlength="100" required></textarea>
+                        <div>Upload Resume: </div>
+                        <input type="file" name="Resume" id="Resume" required>
+                    </div>
+                </fieldset>
+                <div class="bttns">
+                    <button type="submit">Submit Now</button>
+                    <button type="reset">Reset all Entries</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

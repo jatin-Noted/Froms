@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#wrapper{
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    background-color: lightblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.container{
+    width: 40%;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border: 5px solid gray;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.heading{
+    text-align: center;
+}
+
+.note{
+    margin: 20px;
+}
+fieldset{
+    margin: 15px 0;
+    padding: 20px;
+    border: 2px solid gray;
+}
+legend{
+    font-weight: bold;
+    font-style: italic;
+}
+.part{
+    margin: 5px 0;
+}
+input[type=checkbox], input[type=radio]{
+    margin: 5px 0;
+}
+input{
+    padding: 4px;
+}
+li{
+    list-style: none;
+    margin-left: 5px;
+}
+.bttns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+button[type=submit], button[type=reset]{
+    padding: 5px;
+    margin: 10px;
+    height: 50px;
+    width: 150px;
+    font-size: 17px;
+}
+button{
+    background-color: rgb(110, 195, 223);
+    border-radius: 25%;
+}
+button:hover{
+    background-color: lightblue;
+}

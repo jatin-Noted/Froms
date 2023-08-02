@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="wrapper">
+        <div class="container">
+            <h1>Job Application <span class="small">(Web)</span></h1>
+            <hr>
+            <form action="backend">
+                <div class="first">
+                    <div class="name">
+                        <div class="fname">
+                            <label for="fname">First Name</label><br>
+                            <input type="text" name="fname" id="fname" placeholder="Enter your First Name" required>
+                        </div>
+                        <div class="lname">
+                            <label for="lname">Last Name</label><br>
+                            <input type="text" name="lname" id="lname" placeholder="Enter your Last Name" required>
+                        </div>
+                    </div>
+                    <div class="emailJob">
+                        <div class="mail">
+                            <label for="mail">Email ID</label><br>
+                            <input type="email" name="mail" id="mail" placeholder="Enter your Email Address" required>
+                        </div>
+                        <div class="profile">
+                            <label for="prf">Job Profile</label><br>
+                            <select name="prf" id="prf">
+                                <option value="">--Select Job Profile--</option>
+                                <option value="fed">Frontend Developer</option>
+                                <option value="bed">Backend Developer</option>
+                                <option value="fsd">Full Stack Developer</option>
+                                <option value="uiux">UI UX Designer</option>
+                                <option value="ad">Android Developer</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="second">
+                    <label for="adr">Address</label><br>
+                    <input type="text" name="adr" id="adr">
+                </div>
+                <div class="third">
+                    <div class="up">
+                        <div class="city">
+                            <label for="city">City</label><br>
+                            <input type="text" name="city" id="city">
+                        </div>
+                        <div class="pin">
+                            <label for="pin">Pincode</label><br>
+                            <input type="number" name="pin" id="pin">
+                        </div>
+                    </div>  
+                    <div class="down">
+                        <div class="date">
+                            <label for="date">Date</label><br>
+                            <input type="date" name="date" id="date">
+                        </div>
+                        <div class="cv">
+                            <label for="cv">Upload CV</label><br>
+                            <div class="cvupl">
+                                <input type="file" name="cv" id="cv">
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <hr>
+                <div class="bttn">
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                </div>               
+            </form>
+        </div>
+    </div>
+</body>
+</html>
